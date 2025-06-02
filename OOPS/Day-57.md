@@ -27,3 +27,5 @@ jab bi controctor bnaoge aur kuch aisa mil gya jo ki sabmain same hai kabhi bhi 
 
 ✔️✔️prototype ka use tab hota h jab apko ek value pure code me sabke liye chalana h
 like : car h to apne sabhi car ki value 10lakh rakh di to ab model and size metter ni krta sabki price 10lakh hi h to ye condition me hum prototype ka use krte h jisse hum ek price prototype create kr le and vo program me use ho.
+
+💠micro project day59

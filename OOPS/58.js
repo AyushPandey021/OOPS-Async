@@ -4,7 +4,7 @@ function Employee(name, age, id, salary) {
   this.salary = salary;
   this.id = id;
 }
-Employee.prototype.printDetails = ()=> {
+Employee.prototype.printDetails = () => {
   console.log(
     `${this.name} is my name and i am ${this.age} years old and my id is ${this.id} and my salary is ${this.salary} `
   );
