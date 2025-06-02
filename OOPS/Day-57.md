@@ -18,5 +18,12 @@ this.bathroom=2
 let ghar1 = new Ghar()
 💠 karna kya hota h isme ?
 
-
 agr aap class ka use krte ho object bnane me to hum sabse pehle use krte h contructor
+
+💠// Day 58 oops level 2
+
+✔️prototype in oops
+jab bi controctor bnaoge aur kuch aisa mil gya jo ki sabmain same hai kabhi bhi direct constructor mein bnana galat tarika hota h par shi tarika hai prototype ka use karna kyuki prototype mein save karne oar jitne bhi new ke sath instance banaaoge wo sare instance by default tumahri proto ki value k0 hold krega.
+
+✔️✔️prototype ka use tab hota h jab apko ek value pure code me sabke liye chalana h
+like : car h to apne sabhi car ki value 10lakh rakh di to ab model and size metter ni krta sabki price 10lakh hi h to ye condition me hum prototype ka use krte h jisse hum ek price prototype create kr le and vo program me use ho.

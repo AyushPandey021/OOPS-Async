@@ -34,3 +34,26 @@ class cookie {
 let a1 = new cookie("rose", "red", "sweet");
 let a2 = new cookie("coco", "brown", "sweets");
 let a3 = new cookie("vanilla", "gray", "sweets");
+
+//💠 Day 58 oops level 2
+
+function humam(name, age, height) {
+  this.name = name;
+  this.age = age;
+  this.height = height;
+}
+
+humam.prototype.msg = function () {
+  console.log("heyy");
+};
+let h1 = new humam("Ayush", 19, 5.11);
+let h2 = new humam("Sumit", 23, 5.2);
+let h3 = new humam("Krish", 22, 5);
+
+//  sabse pehle property ko apke object me dekhenge nahi mila to  prototype main dhundte hai.
+function car(name) {
+  this.name = name;
+}
+// agr apne this,price bi return kiya and price protoype me bi bnanaya h to this.price wala read hoke return hota h 
+car.prototype.price = 1000000;
+let c1 = new car("swift");
