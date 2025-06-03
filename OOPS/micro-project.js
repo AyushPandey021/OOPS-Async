@@ -1,3 +1,4 @@
+// 💠Library  💠
 //  virtual library
 class Library {
   constructor() {
@@ -44,7 +45,7 @@ SeoniLibrary.addBook([b1, b2, b3]);
 
 // SeoniLibrary.listAllBooks();
 
-                     // 💠Project 2💠
+// 💠Project 2💠
 class MobaileShop {
   constructor(brand, model, price, color) {
     this.mobile = [];
