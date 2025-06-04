@@ -34,7 +34,7 @@ class Player {
   nextSong() {
     this.index = (this.index + 1) % this.songs.length;
     this.loadSong()
-  this.playSong();
+    this.playSong();
   }
   prevsong() {
     this.index = (this.index - 1 + this.songs.length) % this.songs.length;
