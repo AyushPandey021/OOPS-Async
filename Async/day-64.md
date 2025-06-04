@@ -17,3 +17,18 @@ apka code sabse pehle synchronous code chalta h isko js chalata hai main therad 
 js single theraded -> js ek opration hi ek time pr kr sakti hai.
 
 ✔️what is theads => apke processor me cores hote h har core ek time mein kai sare threads hote and her ek thread ek time par ek opreation perform kr sakta hai.
+
+pillars 
+main thread => jaha pat sync code chalte hai sabse pahle.
+ main stack => jo bhi main stack par aayega wo hi chalega.
+
+
+webAPI=>browser ki taref se kai sare features milte hai jo js mein nahi hote , wo features hum js main use to krte h pr vo js ka features ni hote co hume browser se milte hai.
+
+
+//sync code main thread me chalna chalu ho jata h and async code ko webapi  behind the scenes operate krna chalu kar deti h jab ye code complete hota tab ye code ka completion move ho jata hai callback queue. mein 
+callback queue=>
+
+
+callback queue=> 
+macrotask queue=>
