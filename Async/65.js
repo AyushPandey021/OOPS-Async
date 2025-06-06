@@ -58,5 +58,24 @@ stepOne(() => {
 })
 //  collback hell 💠
 
-// use promise  2 type code resolve 
+// use promise  2 type code
+// resolve
+// and reject
 // server ka code jab bhi server ke liye hoga useually asynce nahi hoga par jab bhi request kahi aur jaygi we kab tak responce laaygi ka kio bharosa nhi h 
+let pr = new Promise((res, rej) => {
+  console.log("instagram jao data laao ");
+  console.log("collecting a data in instagram");
+  console.log("Error to collecting data");
+
+  console.log("insta data is here .....🎉");
+
+
+})
+pr.then(function () {
+  console.log("resolved");
+
+
+}).catch(() => {
+  console.log("rejected");
+
+})
