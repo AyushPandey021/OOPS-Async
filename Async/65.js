@@ -30,32 +30,45 @@ getDetails("Ayush Pandey", function () {
 // koi funtion ko chaltate waqt ye bata dena kaam krne ke baad kon sa funtion chalana hai 
 
 // pratice
-function stepOne(cb) {
-  console.log("step 1");
-  cb()
-}
-function stepTwo(cb) {
-  console.log("step 2");
-  cb()
+function stepOne() {
+  return new Promise((res, rej) => {
+    console.log("step 1");
+    res()
 
 
-}
-function stepThree(cb) {
-  console.log("step 3 ");
-  cb()
-
-
-
-}
-stepOne(() => {
-
-  stepTwo(() => {
-    stepThree(() => {
-      console.log("All good and all coll  called ");
-
-    })
   })
+
+}
+function stepTwo() {
+  return new Promise((res, rej) => {
+    console.log("step 2");
+    res()
+
+  })
+
+
+}
+
+function stepThree() {
+  return new Promise((res, rej) => {
+    console.log("step 2");
+    res()
+
+  })
+
+}
+stepOne().then(stepTwo).then(stepThree).then(() => {
+  console.log("all step done ");
+
 })
+// stepOne(() => {
+//   stepTwo(() => {
+//     stepThree(() => {
+//       console.log("its all steps called coll baack hell");
+
+//     })
+//   })
+// })
 //  collback hell 💠
 
 // use promise  2 type code
@@ -63,19 +76,15 @@ stepOne(() => {
 // and reject
 // server ka code jab bhi server ke liye hoga useually asynce nahi hoga par jab bhi request kahi aur jaygi we kab tak responce laaygi ka kio bharosa nhi h 
 let pr = new Promise((res, rej) => {
-  console.log("instagram jao data laao ");
-  console.log("collecting a data in instagram");
-  console.log("Error to collecting data");
-
-  console.log("insta data is here .....🎉");
-
+  console.log("login and go api section..");
+  console.log("create your secret api..");
+  console.log("copy and use ....")
 
 })
-pr.then(function () {
-  console.log("resolved");
-
+pr.then(() => {
+  console.log(" its resolve and working ");
 
 }).catch(() => {
-  console.log("rejected");
+  console.log("its reject and not working ");
 
 })
