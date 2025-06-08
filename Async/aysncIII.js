@@ -1,5 +1,3 @@
-
-
 // Day 66 : aync js level 3 ⏭️ 
 function stepOne() {
   return new Promise((res, rej) => {
@@ -26,7 +24,7 @@ stepOne()
   .then(stepTherr)
   .then(function () {
     console.log("done all steps ");
-    res()
+
   })
 
 // 💠  Question Sloveing 💠
@@ -70,16 +68,70 @@ function getUser() {
     )
   })
 }
-function getPosts(userId){
-  return new Promise((res,rej)=>{
-    setTimeout(function(){
+function getPosts(userId) {
+  return new Promise((res, rej) => {
+    setTimeout(function () {
       res(["title 1", "title 2"])
 
     }, 1000)
   })
 }
-getUser().then(function(data){
+function getComments(postId) {
+  return new Promise((res, rej) => {
+    setTimeout(function () {
+      res(["great post", " amazing content", "you rocked "])
+
+    }, 1000)
+  })
+
+}
+getUser().then(function (data) {
   console.log(data);
-  
+
 })
-getPosts().then
+getPosts().then((data) => {
+
+  console.log(data);
+  getPosts(data.id)
+  return getPosts(data.id)
+
+
+})
+  .then(function (titles) {
+    console.log(titles);
+    return getComments("fjajsdfk")
+
+  })
+  .then(function (comments) {
+    console.log(comments);
+
+  })
+  .finally(function () {
+    console.log("all data fectced");
+
+  })
+
+// ✔️ 3. Fake API delay 
+//  task:
+// write a function fakeApiCall(endpoint) that: 
+// . Accepts a sting like " user" or "posts"
+// . resolve with some dummy data after a random delay (1-3 sec)
+function fakeApiCall(endPoint) {
+  const data ={ 
+  users :["Ayush", "Rohit", "Raghav"],
+   posts : ["Hey champs", "great going everyone", "lets build this"]
+  }
+
+ let delay =  Math.random() * 2000 + 1000
+ return new Promise(function(res,rej){
+  setTimeout(function(){
+console.log(data[endPoint]);
+
+  },delay)
+ })
+}
+  
+  fakeApiCall("posts" /*user*/).then(function(data){
+    console.log(data);
+    
+  })
